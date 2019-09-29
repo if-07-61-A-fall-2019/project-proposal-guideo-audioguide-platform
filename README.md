@@ -7,3 +7,7 @@ Read the comments in the given template carefully and try to align your ideas an
 
 ## Tools
 Preferably you should use LaTeX to get used to this tool.
+
+## Result
+
+You can find our result <a href="./ProjectProposalLaTeX">here</a>

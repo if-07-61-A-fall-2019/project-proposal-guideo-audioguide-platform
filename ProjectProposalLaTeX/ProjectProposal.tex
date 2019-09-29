@@ -1,6 +1,6 @@
 \documentclass[12pt]{article}
 \usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
-\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ...
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -9,8 +9,9 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage[table]{xcolor}
 \usepackage{hyperref}
+\usepackage{parskip}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
-
+ 
 \theoremstyle{definition}
 \newtheorem{example}{Example}
 
@@ -20,164 +21,228 @@
    \color{blue}
 }{}
 
-\newcommand{\projectname}{Template}
-\newcommand{\productname}{School Health Service Assistant}
-\newcommand{\projectleader}{P. Bauer}
+\newenvironment{text}{
+}{} 
+ 
+\newcommand{\productname}{Guideo - Audio Guide Platform}
+\newcommand{\projectleader}{L. Engleder}
 \newcommand{\documentstatus}{In process}
 %\newcommand{\documentstatus}{Submitted}
 %\newcommand{\documentstatus}{Released}
 \newcommand{\version}{V. 1.0}
-
+ 
 \begin{document}
 \begin{titlepage}
 \begin{flushright}
 \includegraphics[scale=.5]{htlleondinglogo.png}\\
 \end{flushright}
-
+ 
 \vspace{10em}
-
+ 
 \begin{center}
 {\Huge Project Proposal} \\[3em]
 {\LARGE \productname} \\[3em]
 \end{center}
-
+ 
 \begin{flushleft}
 \begin{tabular}{|l|l|}
 \hline
-Project Name & \projectname \\ \hline
+Project Name & \productname \\ \hline
 Project Leader & \projectleader \\ \hline
 Document state & \documentstatus \\ \hline
 Version & \version \\ \hline
 \end{tabular}
 \end{flushleft}
-
+ 
 \end{titlepage}
 \section*{Revisions}
 \begin{tabular}{|l|l|l|}
 \hline
 \cellcolor[gray]{0.5}\textcolor{white}{Date} & \cellcolor[gray]{0.5}\textcolor{white}{Author} & \cellcolor[gray]{0.5}\textcolor{white}{Change} \\ \hline
-November 03, 2011&P. Bauer/T. Stütz&First version \\ \hline
+September 16, 2019&L. Engleder/P. Quoc/L. Wirth&First version \\ \hline
+September 20, 2019&L. Engleder/P. Quoc/L. Wirth& Base information for each section; \\ && proofreading by P. Bauer \\ \hline
+September 23, 2019&L. Engleder/P. Quoc/L. Wirth&Minor improvements \\ && and more details;  \\ && proofreading by P. Bauer \\ \hline
+September 27, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&writing on planing section \\ \hline
+September 29, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version \\ \hline
 \end{tabular}
 \pagebreak
-
+ 
 \tableofcontents
 \pagebreak
-
+ 
 \section{Introduction}
-\begin{explanation}
-The management bases the decision to approve a project within the scope of a Project Progress Decision of the Decision Gate Project Approved on the project proposal, which is not prepared within the framework of the V-Model. Based on a project or system idea, the acquirer systematically describes the necessity of a project based on feasibility, affordability, market, and economic efficiency criteria.
-The project proposal processes subjects like the initial situation, existing framework conditions, project objectives and system concepts, chances and risks, and the economic efficiency.
-
-All written text in this color is explanatory and has to be deleted when the document is released. The example given here is only a skeleton. Your text has to be more elaborate and explanatory.
-\end{explanation}
+\begin{text}
+Guideo is a platform for users and creators of audio guides. Depending on the location the user can choose between a variety of guides, which in turn deliver
+an informative and highly interesting experience. Someone could for example travel around the city without any type of knowledge or guide and learn about a variety of subjects
+such as culture and history. Our app would also enable a simple way of adding guides to the catalog.   
+ 
+\end{text}
 \pagebreak
-
+ 
 \section{Initial Situation}
-\begin{explanation}
-The initial situation presents the assessment of the actual situation of an organizational unit or the entire organization of an agency or company. Thus a need for action, which may lead to a product or system vision, is recognizable. The vision may be developed into a project idea. The need for action may be initiated by several project or system ideas.
-The demonstration of capability gaps (i.e. the difference between the necessary planned capabilities and the actually existing capabilities) in a company or agency may clearly show an urgent need for action in order to increase the efficiency or reduce costs. This need for action is presented as product or system idea, leading frequently to a concrete project proposal. Correspondingly, the determination of the requirement to renew or improve a "technically obsolete" system (so-called "system regeneration") or the recognition of market chances for a new product or system may lead to a project idea. The applicable data must be developed for the project proposal.
-Research programs or studies may also be the basis for project ideas; they will be concretized in a project proposal.
+\begin{text}
+Currently there are some ways people get information about their travelling destinations.\newline
 
-The basic question could be summarized in German as follows:
-\begin{itemize}
-	\item Die Ist-Fähigkeiten der Organisation (was können wir?)
-	\item Die Soll-Fähigkeiten der Organisation (was wollen wir können?)
-	\item Ein Soll-Ist-Fähigkeitenvergleich (wo liegen die Defizite?)
-	\item Ein Fähigkeitsvergleich nach vorgegebenen Bewertungskriterien
-\end{itemize}
-\end{explanation}
+An established but also somewhat outdated way is to just read about it in a guide book or online.
+Buying a generic guide book and reading page to page can be a tedious task for most people. It takes hours to get into the often dry material and often results in holey knowledge of the city.\newline
 
-\begin{example}
-A doctor in a (primary) school examines the primary school students periodically. (S)he must report the results of this examinations and inform parents about medical defects. Sometimes the doctor has to refer students in problematic health condition to specialists.
+And the problem with online travel websites is the huge amount of unfiltered information which distracts from the really interesting things. Moreover there's no way to really enjoy these things in real-time and location based.\newline
+ 
+Another option for many people are tour guides and bus tours which promise to offer an educative personalized experience. %In the short description not included are their high prices 
+When you consider their high prices many of these tours still happen to have a lot of inconveniences and problems. First of all, there is huge amount of people who are unable to take part in tours because of hearing impairment or a slower walking speed. An important thing to note is also the small pool of languages these services typically offer. Moreover it can simply be an awful experience to walk around in an awkward group of strangers who you have to adjust to.\newline
+ 
+For many museums the installment of an audio guide system can be a big financial burden. Most of all the purchase of old outdated hardware for high prices from specialized companies seems out of place in our modern connected world. Keeping enough of these things working probably requires a separate technician for maintenance.
+Moreover without regular inspection and cleaning, these systems fail basic hygienic standards. \newline
 
-The creation of the paperwork is time-consuming since the health data collected during the examinations has to be edited several times (once for the reports, once for the parents information, once for referral, etc. The information retrieval concerning the medical history of students is also time-consuming. The time spent on this work would be better used on direct contact time with students.
-
-The documentation of the examinations can be automated. So the reports and further documents will be generated. The medical history will be persisted automatically.
-\end{example}
-
+Although there are archaic audio guides in use in museums there is still no way to enjoy them in a city in general. Our service would provide both locations with fitting guides.
+ 
+\end{text}
+ 
 \pagebreak
-
+ 
 \section{General Conditions and Constraints}
-\begin{explanation}
-This subject describes the framework conditions to be observed by all stakeholders when the project idea is implemented into concrete measures for realizing the system. Framework conditions, e.g., budget situation, existing know-how, legal provisions, cooperations, commitment to partners and deadlines, may be turned into specifications for project execution.
-Technical framework conditions, e.g., development environments and platforms, IT infrastructure, applicable standards and regulations, or specifications of off-the-shelf products, lead to additional (non-functional) requirements for system development.
-\end{explanation}
 
-\begin{example}
-The proposed system has to the deal with the following constraints:
-\begin{itemize}
-\item The information about the medical condition of the pupils is strictly confidential.
-\item The GUI of the information system must be intuitive.
-\item The application must have a small footprint and a local database.
-\item A backup concept is mandatory
-\item The application is multi-language capable (english and german)
-\end{itemize}
-\end{example}
+\subsection{Framework conditions} 
+\begin{text}
 
+We are not planning to spend any money except for the cost of a web hosting server. Additional budget are possible but not really wanted.\newline
+
+As the app was initially and is still imagined as a mobile app. We would develop the app with Angular, a front-end framework, capable of delivering cross-platform mobile solutions. For the server functionality we will use java or nodejs .\newline
+ 
+At the time of writing only one of our member gathered experiences with Angular, but we are expected to be taught Angular in the next months in school.\newline
+ 
+We wouldn't cooperate with any other project in our class but if there are museums showing interest in our project we would try to integrate their audio guides
+which are already in use. It would greatly expand our catalogue of guides and help us establish ourselves in the world of museums.\newline
+ 
+There are no commitments as of now. But we plan to contact some museums and galleries in the near future.
+
+\end{text}
+
+\subsection{Technical conditions}
+\begin{text}
+
+We will develop the app with Angular and the server functionality in combination with IntelliJ.
+
+Versioning will be managed over github.\newline
+ 
+There are currently only our 3 Laptops in use and no Server structure available. And 3 android mobile devices for testing.\newline
+ 
+We will use english when documenting and programming.
+
+\end{text}
+  
 \pagebreak
-
+ 
 \section{Project Objectives and System Concepts}
-\begin{explanation}
-In the Subject Project Objectives and System Concepts, the acquirer describes his vision of a new project or system on a high abstraction level. Project objectives and system concepts may concern several aspects, e.g., the introduction of innovations, the definition of objectives (quality, deadline and cost objectives), the operation of the system in its operating environment and the use of new, improved functionalities.
-\end{explanation}
+ 
+\begin{text}
+In general, we aim to create audio guides, you could find in a museum, which are easily accessible through our app. Moreover you can also listen to them while exploring a city or walking through the zoo.
+Depending on the size of the catalogue in the specific location, one could choose which perspective he wants to hear about.\newline
+ 
+The users can listen to audio guides, if they are near a specific location. These audio guides will be provided from verified users (e. g. museums, cities, etc.) or community. 
+When provided and used in a museum the Geo-location based system would be replaced with a tagging system more suited to such an environment.\newline
 
-\begin{example}
-The project objectives can be summarized as follows:
-\begin{itemize}
-\item The doctor is documenting the examination results while examining the students
-\item Input form assists her/him to input information in a structured and easy way
-\item Common situations (need for vaccinations, check for need of dental brace, etc.) are a one-click-job for the doctor
-\item Info sheet for parents can be printed right after examination
-\item Report is a one-click-job at the end of the day
-\end{itemize}
-\end{example}
+To financially sustain ourselves we will use well placed advertisements and we will set a revenue for audio guide purchases. Also, we will offer a ad-free application in exchange of money but this does not mean that all audio guides on our platform will be provided for free.
+ 
+Users that provide audio guides can get verified. Only verified audio guides must be within the regulations and rules. Non-verified audio guides won’t be checked but they need to respect the rules. Users who intentionally provide misinformation, advertise products, etc. will be banned.\newline
+ 
+Users can leave a rating on the audio guides. Inappropriate, faulty or wrong audio guides can be reported by the community.\newline
+ 
+A notification will pop up if the user is close to a place or point where a verified audio guide was set, but only if the application is running. A pop up window will appear if the app runs in the foreground. Otherwise, the notification will show up on the status bar and in the notification inbox. But only for verified audio guides will a notification popped up. Non-verified audio guides will only be shown in the Explorer View.\newline
+ 
+In the Explorer View the user can explore all available audio guides (verified and non-verified) on a google maps like map. Alternatively there will be a list of audio guides structured around locations (e. g. Linz -> Linz Kernzone).\newline
+ 
+Our aim is that most of the audio guides are cost-free and that our revenue stems from the purchase of audio guides and advertisements.\newline
 
+Our platform should also provide a payment system to make the purchase of specific audio guides (museums, zoos...) easy and intuitive. 
+\end{text}
+ 
 \pagebreak
 \section{Opportunities and Risks}
-\begin{explanation}
-The Subject Opportunities and Risks comprises data which are normally prepared in industrial business plans. Frequently, an anonymous market with potential acquirers, which could be interested in the new product or system idea, will be analyzed at first. Therefore, the contents of this subject is characterized by a certain uncertainty or fuzziness. The subjects examines the chances of achieving profit on the market with a specific product or system. In addition to the chances, the risks of failing on the market or sustaining losses with a product or system should be analyzed.
-\end{explanation}
-
-\begin{example}
-The project has the following opportunities:
-\begin{itemize}
-\item The doctor is able to increase his time with his patients.
-\item The time for bureaucratic work declines.
-\item The quality will increase
-\end{itemize}
-
-The following risk have to be taken into account.
-\begin{itemize}
-\item Data transfer of studentsÕ master data from legacy systems is problematic.
-\item There is no information about the legacy systems and their data structure.
-\item Further there is no information, whether the staff is capable and willing to supply the students master data (names, classes, ...).
-\end{itemize}
-
-\end{example}
-
+\begin{text}
+The project could acquire popularity with many people who are visiting another country and want an easy way to learn about customs, culture and history.
+Also cities might be interested in this project in order to increase tourism due to the popularity of our audio guide catalog.
+It could also turn out successful as a creative platform for creators of this somewhat new medium. We are also exploring the possibility of selling these created guides. The user will be compensated fairly.\newline
+ 
+Another opportunity of expanding the app would be to simulate a audio-visual experience through the use of AR-technology. It could be employed in historical settings and sceneries. Although the idea is very interesting it would require far more development time and expertise in the field.\newline
+ 
+We could face the risk that our catalogue is too small to really consider it as an option.\newline 
+ 
+One of the biggest risk would just be the absence of any traction and popularity among Museums, Zoos and the like. \newline
+ 
+\end{text}
+ 
 \pagebreak
 \section{Planning}
-\begin{explanation}
-The planning specifies the organizational and commercial project execution and system development aspects. The project organization, e.g., matrix organization and steering committees, and the responsibilities for the decision-making processes within project will be specified.
-The Project Leader will be appointed, his tasks will be defined. Available resources, funds and specialist personnel will be determined. Start and end date for the project will be specified. The planning can be based on the statements developed in the subject Project Objectives and System Concepts, which makes additional statements on feasibility, funding and schedules.
-
-The following parts must be included:
+\subsection{Milestones}
 \begin{itemize}
-\item List of major project milestones.
-\item Assign project lead and other outstanding roles to team members.
-\item Give a rough estimate how many resources you need (human resources, licenses, servers, etc.)
+\item Database Structure and Development
+\item Localization and Notifications
+\item Audio Guide Streaming
+\item Route Finding
+\item Account Login, Authentication and Management
+\item Tagging System
+\item Payment System
+\item Guide Creation System (Recording and Tagging)
+\item Archive + Rating + Reporting
 \end{itemize}
 
-Answer the following questions when preparing this section:
-\begin{itemize}
-\item When will the project end?
-\item When will the project start?
-\item When will be a first prototype available?
-\item When does implementation work start?
-\item What are the big blocks of work to be done?
-\item Is this work doable in the given period of time?
-\item Do we need any other stuff to make our work (licenses, servers, É)?
-\end{itemize}
-\end{explanation}
+\subsection{Members}
+\begin{tabular}{|l|l|}
+\hline
+\cellcolor[gray]{0.5}\textcolor{white}{Name} & \cellcolor[gray]{0.5}\textcolor{white}{Role}\\ \hline
+Lucas Engleder & Project Leader and Mobile Co-Master\\ \hline
+Patrick Quoc & Mobile master\\ \hline
+Lukas Wirth & Seamodea \\  \hline
+Alexander Leeb & Database Master and Server Assistant \\ \hline
+\end{tabular}
 
+Role Explanation:
+\begin{itemize}
+    \item Seamodea
+    \begin{itemize}
+        \item \textbf{Se}rver
+        \item \textbf{A}nd
+        \item \textbf{Mo}bile \textbf{De}sign
+        \item \textbf{A}rchitect
+    \end{itemize} 
+\end{itemize}
+\subsection{Resources}
+\subsubsection{Human Resources}
+\begin{text}
+Our project is actually a school project which disables to really consider external programming help outside of our core team members. We wouldn't use this option anyway as we see this project not only as a project but as an opportunity to learn new things and try innovative technologies.
+
+But regarding design, we are bearing in mind that our capabilities might be limited and in need of an overlooking eye. Possible candidates are colleagues in our school's design branch.\end{text}
+
+\subsubsection{Licenses and Server}
+\begin{itemize}
+\item License for Jetbrains' IntelliJ Ultimate Edition IDEA to develop Angular Apps.
+\item Microsoft's Visual Studio Code and Drifty Co.'s Ionic are under the MIT License.
+\item Database License
+\end{itemize}
+
+We are considering buying a server if our school isn't able to provide one. In the case of a possible purchase we would need a server with storage capabilities to accommodate our file space needs.
+
+\subsection{Project Management}
+\begin{itemize}
+    \item Start of project: 30th September 2019
+    \item End of project: End of 5th grade
+    \newline
+    \item First Prototype available: 24.02.2020 (First day of school after semester vacation)
+    \item Begin of implementation work: 4th October 2019
+    \newline
+    \newline
+    \item Big blocks of work
+    \begin{itemize}
+        \item Database and Server Structure
+        \item Localization and Notifications
+        \item Audio Guide Streaming
+        \item Account Login, Authentication and Management
+        \item Route Finding and Google maps integration in general
+    \end{itemize}
+    \newline
+    \item With enough dedication and without major problems in development we estimate it to be hard but quite possible
+    \item As already mentioned we will need a server for our application.
+    
+\end{itemize} 
 \end{document}  
