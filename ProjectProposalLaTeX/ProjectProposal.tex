@@ -26,10 +26,10 @@
  
 \newcommand{\productname}{Guideo - Audio Guide Platform}
 \newcommand{\projectleader}{L. Engleder}
-\newcommand{\documentstatus}{In process}
-%\newcommand{\documentstatus}{Submitted}
+%\newcommand{\documentstatus}{  In process }
+\newcommand{\documentstatus}{Submitted}
 %\newcommand{\documentstatus}{Released}
-\newcommand{\version}{V. 1.0}
+\newcommand{\version}{V. 1.7.0}
  
 \begin{document}
 \begin{titlepage}
@@ -64,7 +64,8 @@ September 20, 2019&L. Engleder/P. Quoc/L. Wirth& Base information for each secti
 September 23, 2019&L. Engleder/P. Quoc/L. Wirth&Minor improvements \\ && and more details;  \\ && proofreading by P. Bauer \\ \hline
 September 27, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&writing on planing section \\ \hline
 September 29, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&more information in \\ && planning section \\ \hline
-September 30, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version\\ \hline
+September 30, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb& improvements on all sections \\ \hline
+October 4, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version\\ \hline
 \end{tabular}
 \pagebreak
  
@@ -73,24 +74,25 @@ September 30, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version\\ \hline
  
 \section{Introduction}
 \begin{text}
-Guideo is a platform for users and creators of audio guides. Depending on the location the user can choose between a variety of guides, which in turn deliver
+Guideo is a platform for users and creators of audio guides alike. Depending on the location the user can choose between a variety of guides, which in turn deliver
 an informative and highly interesting experience. Someone could for example travel around the city without any type of knowledge or guide and learn about a variety of subjects
-such as culture and history. Our app would also enable a simple way of adding guides to the catalog.   
+such as culture and history. Our app would also enable a simple way of adding guides to the catalogue.   
  
 \end{text}
 \pagebreak
  
 \section{Initial Situation}
 \begin{text}
-Currently there are some ways people get information about their travelling destinations.\newline
+Currently there are some ways for people to get information about their travelling destination.\newline
 
 An established but also somewhat outdated way is to just read about it in a guide book or online.
-Buying a generic guide book and reading page to page can be a tedious task for most people. It takes hours to get into the often dry material and often results in holey knowledge of the city.\newline
+Buying a generic guide book and
+reading page to page is a tedious task for most people. It takes hours to get into the often dry material and often results in holey knowledge of the city.\newline
 
 And the problem with online travel websites is the huge amount of unfiltered information which distracts from the really interesting things. Moreover there's no way to really enjoy these things in real-time and location based.\newline
  
 Another option for many people are tour guides and bus tours which promise to offer an educative personalized experience. %In the short description not included are their high prices 
-When you consider their high prices many of these tours still happen to have a lot of inconveniences and problems. First of all, there is huge amount of people who are unable to take part in tours because of hearing impairment or a slower walking speed. An important thing to note is also the small pool of languages these services typically offer. Moreover it can simply be an awful experience to walk around in an awkward group of strangers who you have to adjust to.\newline
+When you consider their high prices many of these tours still happen to have a lot of inconveniences and problems. First of all, there is a huge amount of people who are unable to take part in tours because of hearing impairment or a slower walking speed. An important thing to note is also the small pool of languages these services typically offer. Moreover it can simply be an awful experience to walk around in an awkward group of strangers who you have to adjust to.\newline
  
 For many museums the installment of an audio guide system can be a big financial burden. Most of all the purchase of old outdated hardware for high prices from specialized companies seems out of place in our modern connected world. Keeping enough of these things working probably requires a separate technician for maintenance.
 Moreover without regular inspection and cleaning, these systems fail basic hygienic standards. \newline
@@ -108,7 +110,7 @@ Although there are archaic audio guides in use in museums there is still no way 
 
 We are not planning to spend any money except for the cost of a web hosting server. Additional budget are possible but not really wanted.\newline
 
-As the app was initially and is still imagined as a mobile app. We would develop the app with Angular, a front-end framework, capable of delivering cross-platform mobile solutions. For the server functionality we will use java or nodejs .\newline
+As the app was initially and is still imagined as a mobile app. We would develop the app with Angular, a front-end framework, capable of delivering cross-platform mobile solutions. For the server functionality we will use Java or nodejs .\newline
  
 At the time of writing only one of our member gathered experiences with Angular, but we are expected to be taught Angular in the next months in school.\newline
  
@@ -124,11 +126,11 @@ There are no commitments as of now. But we plan to contact some museums and gall
 
 We will develop the app with Angular and the server functionality in combination with IntelliJ.
 
-Versioning will be managed over github.\newline
+Versioning will be managed over GitHub.\newline
  
-There are currently only our 3 Laptops in use and no Server structure available. And 3 android mobile devices for testing.\newline
+There are currently only our 4 Laptops in use and no Server structure available. And 4 android mobile devices for testing.\newline
  
-We will use english when documenting and programming.
+We will use English when documenting and programming.
 
 \end{text}
   
@@ -138,29 +140,39 @@ We will use english when documenting and programming.
  
 \subsection{General}
 \begin{text}
-In general, we aim to create audio guides, you could find in a museum, which are easily accessible through our app. Moreover you can also listen to them while exploring a city or walking through the zoo.
+In general, we aim to create the same experience you could get in museums with their audio guides, but easily accessible through our app. Which leads to that museums only have to provide audio files and no more expensive hardware. Further on, the museum's visitors can use their own mobile phones and headphones and do not have to use the headphones from the museum that were used by many other users.
+
+Moreover you can expand that experience to iconic places and buildings in cities or for the animals in zoos. They only have to provide the audio files and their location on the map. Our app will recognize if the user is near a placed audio file and will inform the user.
+
 Depending on the size of the catalogue in the specific location, one could choose which perspective he wants to hear about.
 \end{text}
  
 \subsection{Features}
 \begin{text}
-The users can listen to audio guides, if they are near a specific location. These audio guides will be provided from verified users (e. g. museums, cities, etc.) or community. 
+The users can listen to audio guides, if they are near a specific location. These audio guides will be provided by verified users (e. g. museums, cities, etc.) or the community. Users with popularity among the community and a clean record of guides will be given the option to upgrade to a verified user.
 When provided and used in a museum the Geo-location based system would be replaced with a tagging system more suited to such an environment.\newline
+ 
+To clarify, a guide is a list of different tracks/files each telling a story or giving information about a certain location/object. If a user decides to create a guide he will be given the option to fully create all of its tracks or to build a compilation out of other guides and his own files. A guide should be a creative medium encompassing all the stylistic decision the guide creator made. \newline
+
+But if a listener encounters a location or object he wants to hear about he will be notified and provided with an explanation of another guide. Still, it will not be played automatically, as we think that if a creator decides not to include a location it was a choice he made out of good reasons.
+Out of concern that users could miss important locations or that the amount of points in one guide is low we will offer a Top Track Mode. Which automatically plays the most popular track of a specific location.\newline^
  
 Users that provide audio guides can get verified. Only verified audio guides must be within the regulations and rules. Non-verified audio guides won’t be checked but they need to respect the rules. Users who intentionally provide misinformation, advertise products, etc. will be banned.\newline
  
-Users can leave a rating on the audio guides. Inappropriate, faulty or wrong audio guides can be reported by the community. The management of guides will be readily available on the app and a separate website which provides the needed features for uploading, updating and management in general.\newline
+Users can leave a rating on the audio guides. Inappropriate, faulty or wrong audio guides can be reported by the community. The management of guides will be readily available on e app and a separate website which provides the needed features for uploading, updating and management in general.\newline
+
+To provide people with recommendations and an optimal user experience we plan on collecting some essential data like the languages he or she speaks, preferred language, favorite topics and obviously basic information such as name and email.\newline
  
 A notification will pop up if the user is close to a place or point where a verified audio guide was set, but only if the application is running. A pop up window will appear if the app runs in the foreground. Otherwise, the notification will show up on the status bar and in the notification inbox. But only for verified audio guides will a notification popped up. Non-verified audio guides will only be shown in the Explorer View.\newline
  
-In the Explorer View the user can explore all available audio guides (verified and non-verified) on a google maps like map. Alternatively there will be a list of audio guides structured around locations (e. g. Linz - Linz Kernzone).
+In the Explorer View the user can explore all available audio guides (verified and non-verified) on a google maps like map. Alternatively there will be a list of audio guides structured around locations (e. g. Linz - Linz Kernzone) with essential information such as language, creator, length of time, topics and popularity. Filtering and Sorting will be enabled.
 \end{text}
 
 \subsection{Financial}
 \begin{text} 
 Our aim is that most of the audio guides are cost-free and that our revenue stems from the purchase of audio guides and advertisements.\newline
 
-To financially sustain ourselves we will use well placed advertisements and we will set a revenue for audio guide purchases. Also, we will offer an ad-free application in exchange for money but this does not mean that all audio guides on our platform will be provided for free.\newline
+To financially sustain ourselves we will use a combination of different sources of revenue. We will employ advertisement on free guides at the beginning and end of the tour. This feature will also push users to buy the ad-free application in exchange for money but, this does not mean that all audio guides on our platform will be provided for free. When selling the guides we will also take a small commission for our services.\newline
 
 Our platform should also provide a payment system to make the purchase of specific audio guides (museums, zoos...) easy and intuitive. 
 \end{text}
@@ -174,7 +186,7 @@ We are planning to test the tagging system in our own school as it shares some f
 \section{Opportunities and Risks}
 \begin{text}
 The project could acquire popularity with many people who are visiting another country and want an easy way to learn about customs, culture and history.
-Also cities might be interested in this project in order to increase tourism due to the popularity of our audio guide catalog.
+Also cities might be interested in this project in order to increase tourism due to the popularity of our audio guide catalogue.
 It could also turn out successful as a creative platform for creators of this somewhat new medium. We are also exploring the possibility of selling these created guides. The user will be compensated fairly.\newline
  
 Another opportunity of expanding the app would be to simulate a audio-visual experience through the use of AR-technology. It could be employed in historical settings and sceneries. Although the idea is very interesting it would require far more development time and expertise in the field.\newline
@@ -245,7 +257,7 @@ We are considering buying a server if our school isn't able to provide one. In t
     \item End of project: End of 5th grade
     \newline
     \item First Prototype available: 24.02.2020 (First day of school after semester vacation)
-    \item Begin of implementation work: 4th October 2019
+    \item Begin of implementation work: 11th October 2019
     \newline
     \newline
     \item Big blocks of work
