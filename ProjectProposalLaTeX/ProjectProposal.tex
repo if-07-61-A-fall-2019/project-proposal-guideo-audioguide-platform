@@ -65,7 +65,8 @@ September 23, 2019&L. Engleder/P. Quoc/L. Wirth&Minor improvements \\ && and mor
 September 27, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&writing on planing section \\ \hline
 September 29, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&more information in \\ && planning section \\ \hline
 September 30, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb& improvements on all sections \\ \hline
-October 4, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version\\ \hline
+October 4, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&improvements on all sections\\ \hline
+October 7, 2019&L. Engleder/P. Quoc/L. Wirth/A. Leeb&final version\\ \hline
 \end{tabular}
 \pagebreak
  
@@ -89,7 +90,7 @@ An established but also somewhat outdated way is to just read about it in a guid
 Buying a generic guide book and
 reading page to page is a tedious task for most people. It takes hours to get into the often dry material and often results in holey knowledge of the city.\newline
 
-And the problem with online travel websites is the huge amount of unfiltered information which distracts from the really interesting things. Moreover there's no way to really enjoy these things in real-time and location based.\newline
+And the problem with online travel websites is the huge amount of unfiltered information which distracts from the really interesting things. Moreover there is no way to really enjoy these things in real-time and location based.\newline
  
 Another option for many people are tour guides and bus tours which promise to offer an educative personalized experience. %In the short description not included are their high prices 
 When you consider their high prices many of these tours still happen to have a lot of inconveniences and problems. First of all, there is a huge amount of people who are unable to take part in tours because of hearing impairment or a slower walking speed. An important thing to note is also the small pool of languages these services typically offer. Moreover it can simply be an awful experience to walk around in an awkward group of strangers who you have to adjust to.\newline
@@ -110,9 +111,9 @@ Although there are archaic audio guides in use in museums there is still no way 
 
 We are not planning to spend any money except for the cost of a web hosting server. Additional budget are possible but not really wanted.\newline
 
-As the app was initially and is still imagined as a mobile app. We would develop the app with Angular, a front-end framework, capable of delivering cross-platform mobile solutions. For the server functionality we will use Java or nodejs .\newline
+As the app was initially and is still imagined as a mobile app. We would develop the app with Angular, a front-end framework, capable of delivering cross-platform mobile solutions. For the server functionality we will use Java or NodeJS .\newline
  
-At the time of writing only one of our member gathered experiences with Angular, but we are expected to be taught Angular in the next months in school.\newline
+At the time of writing only one of our members gathered experiences with Angular, but we are expected to be taught Angular in the next months in school.\newline
  
 We wouldn't cooperate with any other project in our class but if there are museums showing interest in our project we would try to integrate their audio guides
 which are already in use. It would greatly expand our catalogue of guides and help us establish ourselves in the world of museums.\newline
@@ -140,22 +141,26 @@ We will use English when documenting and programming.
  
 \subsection{General}
 \begin{text}
-In general, we aim to create the same experience you could get in museums with their audio guides, but easily accessible through our app. Which leads to that museums only have to provide audio files and no more expensive hardware. Further on, the museum's visitors can use their own mobile phones and headphones and do not have to use the headphones from the museum that were used by many other users.
+In general, we aim to create the same experience you could get in museums with their audio guides, but easily accessible through our app. Normally these guides are only available in museums but our routes will be available at iconic sights, in cities, zoos and much more. All of this at fingertips' reach through our mobile application. 
 
-Moreover you can expand that experience to iconic places and buildings in cities or for the animals in zoos. They only have to provide the audio files and their location on the map. Our app will recognize if the user is near a placed audio file and will inform the user.
+Further on, the museum and zoos in question will easily be able to provide audio guides to their visitors, completely eliminating the need for expensive equipment and maintenance staff.
 
-Depending on the size of the catalogue in the specific location, one could choose which perspective he wants to hear about.
+They only have to provide the audio files and each location on the map or in the building. Our app will recognize if the user is near a placed audio file and play the desired track.
+
+Not only museums or other institutions can create guides, but every one who is willing to create their own experience is welcomed to upload it to our platform for other users to enjoy. These users can then choose between a variety of audio guides covering different topics and presenting the information in various styles.
 \end{text}
  
 \subsection{Features}
 \begin{text}
 The users can listen to audio guides, if they are near a specific location. These audio guides will be provided by verified users (e. g. museums, cities, etc.) or the community. Users with popularity among the community and a clean record of guides will be given the option to upgrade to a verified user.
-When provided and used in a museum the Geo-location based system would be replaced with a tagging system more suited to such an environment.\newline
+When provided and used in a museum the Geo-location based system would be replaced with a tagging system more suited to such an environment.
+We are planning on offering different options for museums to install their tagging system. The most modern but also most expensive solution would be installment of beacons that locate users in small spaces and make the experience fluid and easy.
+Another, more simple, solution would be to tag the stations or artworks with simple numbers combined with QR-codes which are easily scanned and integrated into the experience.\newline
  
 To clarify, a guide is a list of different tracks/files each telling a story or giving information about a certain location/object. If a user decides to create a guide he will be given the option to fully create all of its tracks or to build a compilation out of other guides and his own files. A guide should be a creative medium encompassing all the stylistic decision the guide creator made. \newline
 
 But if a listener encounters a location or object he wants to hear about he will be notified and provided with an explanation of another guide. Still, it will not be played automatically, as we think that if a creator decides not to include a location it was a choice he made out of good reasons.
-Out of concern that users could miss important locations or that the amount of points in one guide is low we will offer a Top Track Mode. Which automatically plays the most popular track of a specific location.\newline^
+Out of concern that users could miss important locations or that the amount of points in one guide is low we will offer a Top Track Mode. Which automatically plays the most popular track of a specific location.\newline
  
 Users that provide audio guides can get verified. Only verified audio guides must be within the regulations and rules. Non-verified audio guides won’t be checked but they need to respect the rules. Users who intentionally provide misinformation, advertise products, etc. will be banned.\newline
  
@@ -172,7 +177,7 @@ In the Explorer View the user can explore all available audio guides (verified a
 \begin{text} 
 Our aim is that most of the audio guides are cost-free and that our revenue stems from the purchase of audio guides and advertisements.\newline
 
-To financially sustain ourselves we will use a combination of different sources of revenue. We will employ advertisement on free guides at the beginning and end of the tour. This feature will also push users to buy the ad-free application in exchange for money but, this does not mean that all audio guides on our platform will be provided for free. When selling the guides we will also take a small commission for our services.\newline
+To financially sustain ourselves we will use a combination of different sources of revenue. We will employ advertisement on free guides at the beginning and end of the tour. This feature will also push users to buy the ad-free application in exchange for money but, this does not mean that all audio guides (like museums, zoos...) on our platform will be provided for free. When selling the guides we will also take a small commission for our services.\newline
 
 Our platform should also provide a payment system to make the purchase of specific audio guides (museums, zoos...) easy and intuitive. 
 \end{text}
