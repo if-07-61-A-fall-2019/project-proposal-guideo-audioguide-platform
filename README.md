@@ -10,4 +10,4 @@ Preferably you should use LaTeX to get used to this tool.
 
 ## Result
 
-You can find our result <a href="./ProjectProposalLaTeX">here</a>
+You can find our result <a href="./ProjectProposalLaTeX/ProjectProposal.pdf">here</a>
