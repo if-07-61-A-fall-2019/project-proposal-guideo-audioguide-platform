@@ -13,12 +13,14 @@ You can find our System Specification in the System Specification directory or c
 | Doc | Location |
 |---|---|
 | Product Burndown | [this link](./03_Planning/ProductBurndown.xlsx) or in the 03_Planning folder |
-| Product Backlog | ... |
-| Effort Estimation | ... |
+| Product Backlog | [this link](./03_Planning/ProductBacklog.xlsx) or in the 03_Planning folder |
+| Effort Estimation | [this link](./03_Planning/EffortEstimation.xlsx) or in the 03_Planning folder |
 
 ## Tests
 
-
+| Doc | Location |
+|---|---|
+| Test Reports | [this link](./04_Testing/GuideoTestReport.xlsx) or in the 04_Testing folder |
 
 ## Release
 
