@@ -24,4 +24,15 @@ You can find our System Specification in the System Specification directory or c
 
 ## Release
 
+| Doc | Location |
+|---|---|
+| Feature List | ... |
+| Manual | ... |
+
+## Source Code 
+
+Here are the links to the github repos
+
+* https://github.com/EnglederLucas/GuideoFrontend
+* https://github.com/EnglederLucas/GuideoFrontend
 
