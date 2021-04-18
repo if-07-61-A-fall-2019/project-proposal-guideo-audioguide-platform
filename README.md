@@ -12,27 +12,34 @@ You can find our System Specification in the System Specification directory or c
 
 | Doc | Location |
 |---|---|
-| Product Burndown | [this link](./03_Planning/ProductBurndown.xlsx) or in the 03_Planning folder |
-| Product Backlog | [this link](./03_Planning/ProductBacklog.xlsx) or in the 03_Planning folder |
-| Effort Estimation | [this link](./03_Planning/EffortEstimation.xlsx) or in the 03_Planning folder |
+| [Product Burndown](./03_Planning/ProductBurndown.xlsx) | see 03_Planning folder |
+| [Product Backlog](./03_Planning/ProductBacklog.xlsx) | see 03_Planning folder |
+| [Effort Estimation](./03_Planning/EffortEstimation.xlsx) | see 03_Planning folder |
 
 ## Tests
 
 | Doc | Location |
 |---|---|
-| Test Reports | [this link](./04_Testing/GuideoTestReport.xlsx) or in the 04_Testing folder |
+| [Test Reports](./04_Testing/GuideoTestReport.xlsx) | see 04_Testing folder |
+| [Test Cases](https://www.notion.so/Testing-658f73e0bed94178960818aaae017264) | see TestCases folder in 04_Testing |
+| Test Protocolls | see [Test Protocolls](./04_Testing/Test_Protocolls/) in 04_Testing |
 
 ## Release
 
 | Doc | Location |
 |---|---|
-| Feature List | ... |
-| Manual | ... |
+| [Feature List](./05_ReleaseNotes/Feature_List.pdf) | see 05_ReleaseNotes folder |
+| [Manual](./05_ReleaseNotes/Manual.pdf) | see 05_ReleaseNotes folder |
+| [Change Logs](./05_ReleaseNotes/Change_Log.pdf) | see 05_ReleaseNotes folder |
+
+## Issues
+
+https://github.com/EnglederLucas/GuideoFrontend/issues
 
 ## Source Code 
 
 Here are the links to the github repos
 
 * https://github.com/EnglederLucas/GuideoFrontend
-* https://github.com/EnglederLucas/GuideoFrontend
+* https://github.com/EnglederLucas/GuideoBackend
 
