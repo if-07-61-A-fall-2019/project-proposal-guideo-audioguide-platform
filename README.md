@@ -21,7 +21,7 @@ You can find our System Specification in the System Specification directory or c
 | Doc | Location |
 |---|---|
 | [Test Reports](./04_Testing/GuideoTestReport.xlsx) | see 04_Testing folder |
-| [Test Cases](https://www.notion.so/Testing-658f73e0bed94178960818aaae017264) | see TestCases folder in 04_Testing |
+| Test Cases | see our TestCases in our [Notion Page](https://www.notion.so/Testing-658f73e0bed94178960818aaae017264) |
 | Test Protocolls | see [Test Protocolls](./04_Testing/Test_Protocolls/) in 04_Testing |
 
 ## Release
