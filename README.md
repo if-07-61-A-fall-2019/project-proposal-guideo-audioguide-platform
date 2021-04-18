@@ -41,5 +41,5 @@ https://github.com/EnglederLucas/GuideoFrontend/issues
 Here are the links to the github repos
 
 * https://github.com/EnglederLucas/GuideoFrontend
-* https://github.com/EnglederLucas/GuideoFrontend
+* https://github.com/EnglederLucas/GuideoBackend
 
