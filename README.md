@@ -43,3 +43,7 @@ Here are the links to the github repos
 * https://github.com/EnglederLucas/GuideoFrontend
 * https://github.com/EnglederLucas/GuideoBackend
 
+## Installer / Webpage
+
+* Android APK: https://guideo.htl-leonding.ac.at:8443/download/guideo.apk
+* Webpage: https://guideo.htl-leonding.ac.at/
